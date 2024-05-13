@@ -14,10 +14,10 @@ export interface DialogProps extends ModalProps {
 const Dialog = (props: DialogProps) => {
   const { children, title, ...restProps } = props;
   return (
-    <Modal {...restProps}>
+    <Modal {...restProps} isCentered>
       <ModalOverlay />
-      <ModalContent>
-        <ModalHeader>{title || "Dialog"}</ModalHeader>
+      <ModalContent className={"border border-slate-600 w-[500px] bg-black"}>
+        <ModalHeader className={"border border-slate-600 p-3"}>{title || "Dialog"}</ModalHeader>
         <ModalBody>{children}</ModalBody>
       </ModalContent>
     </Modal>
