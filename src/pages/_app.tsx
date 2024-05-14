@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const wagmiConfig = useMemo(() => {
     return getDefaultConfig({
       appName: "Moongate",
-      projectId: "projectId",
+      projectId: "2978457c67eddf6e07e6e23003d972fb",
       chains: [mainnet],
     });
   }, []);
